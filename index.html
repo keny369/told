@@ -67,14 +67,14 @@
         "provider": {"@id": "https://told.media/#organization"},
         "areaServed": {"@type": "Country", "name": "Australia"},
         "audience": {"@type": "PeopleAudience", "audienceType": "Adult children recording a parent or grandparent"},
-        "description": "A parent or grandparent's life recorded in their own voice across short conversations, with human-reviewed transcript, chapters, photographs and a structured Life Map. Recorded by Told's conversational interviewer on a tablet, by a family member with Told's guidance, or by a trained interviewer who visits.",
+        "description": "A parent or grandparent's life recorded in their own voice across short conversations, with human-reviewed transcript, chapters, photographs and a structured Life Map. Audio by default, video available. Recorded by Told's conversational interviewer over a scheduled phone call, by a family member with Told's guidance, or by a trained interviewer who visits.",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Ways to record",
           "itemListElement": [
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Told asks the questions", "description": "A patient conversational interviewer on a tablet that remembers previous conversations."}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "You ask, Told helps", "description": "A family member records on their own phone with suggested questions and organisation."}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "We send an interviewer", "description": "A trained interviewer visits, with Told handling preparation, transcription and follow-up."}}
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Told calls them", "description": "A scheduled weekly phone call from a patient conversational interviewer that remembers previous conversations. No device or app required."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "You ask, Told helps", "description": "A family member records on their own device, in person or by phone, with suggested questions and organisation."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "We send an interviewer", "description": "A trained interviewer visits with proper audio and optional video, with Told handling preparation, transcription and follow-up."}}
           ]
         }
       },
@@ -92,10 +92,11 @@
         "@type": "FAQPage",
         "@id": "https://told.media/#faq",
         "mainEntity": [
-          {"@type": "Question", "name": "Does the person being recorded need to use any technology?", "acceptedAnswer": {"@type": "Answer", "text": "No. The storyteller sits down and talks. Family, staff or a Told interviewer handle setup, identity and permissions. Where Told's own interviewer is used, the storyteller sees a face on a tablet, hears one question at a time and can stop whenever they like."}},
+          {"@type": "Question", "name": "Does the person being recorded need to use any technology?", "acceptedAnswer": {"@type": "Answer", "text": "No. In the simplest version, Told rings them at an agreed time on their ordinary phone. They answer, talk, and hang up when they have had enough. Family or staff handle setup, identity and permissions. Nobody is asked to install, charge or log in to anything."}},
+          {"@type": "Question", "name": "Is it audio or video?", "acceptedAnswer": {"@type": "Answer", "text": "Audio by default. Most families say the voice is what they were afraid of losing, and most storytellers are more relaxed without a camera. Video is available with a visiting interviewer for families and organisations that want it."}},
           {"@type": "Question", "name": "Can stories be recorded in a language other than English?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. If a story was lived in Vietnamese, Greek, Italian, Mandarin or another language it can be told in that language. The family receives the original recording and a translation that a person has checked."}},
           {"@type": "Question", "name": "Who can see the recordings?", "acceptedAnswer": {"@type": "Answer", "text": "Every story starts private. The storyteller decides, chapter by chapter, whether it stays with them, is shared with named family, is visible to the community that commissioned a collection, or is made public. Public use requires explicit written consent."}},
-          {"@type": "Question", "name": "Does AI write the life story?", "acceptedAnswer": {"@type": "Answer", "text": "No. The original video and audio remain the authoritative record. Software transcribes, organises and suggests follow-up questions. A person reviews names, places and meaning before anything is treated as final."}},
+          {"@type": "Question", "name": "Does AI write the life story?", "acceptedAnswer": {"@type": "Answer", "text": "No. The original recordings remain the authoritative record. Software transcribes, organises and suggests follow-up questions. A person reviews names, places and meaning before anything is treated as final."}},
           {"@type": "Question", "name": "How long does it take?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the person. Short conversations over several weeks work better than one long afternoon. Ten minutes today and forty tomorrow is fine. A typical life runs to several hours of recording gathered over a couple of months."}},
           {"@type": "Question", "name": "Do you work in residential aged care?", "acceptedAnswer": {"@type": "Answer", "text": "Residential aged care is a different setting from retirement living. Where a resident may not have full capacity to consent, Told works to a specific process agreed with the provider rather than a generic form. Talk to us first."}},
           {"@type": "Question", "name": "What does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "Told quotes a plan and a price before anyone is asked a question. Cost depends on which of the three ways of recording you choose and, for organisations, how many people are in the collection. Email hello@told.media."}}
@@ -195,17 +196,21 @@
     .way p{font-size:1rem;color:var(--slate)}
     .way .who{display:inline-block;font-size:.85rem;color:var(--amber-ink);margin-bottom:1.1rem}
 
-    /* tablet */
+    /* call card */
     .tablet-wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;margin-top:1.8rem}
-    .tablet{background:#0e1c1e;border-radius:18px;padding:14px;box-shadow:0 30px 60px -30px rgba(21,40,43,.5)}
-    .screen{background:#182e31;border-radius:8px;aspect-ratio:16/11;position:relative;overflow:hidden;color:#e7ecea;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:clamp(10px,2vw,22px);padding:clamp(14px,2.5vw,24px) 24px 64px}
-    .face{width:24%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 42%,#d7c2a6 0 38%,#c6ad8e 39% 60%,transparent 61%),radial-gradient(circle at 50% 50%,#3a5a5e,#22393c 70%);position:relative}
-    .face::before,.face::after{content:"";position:absolute;top:44%;width:7%;height:7%;border-radius:50%;background:#22393c}
-    .face::before{left:38%}.face::after{right:38%}
-    .face i{position:absolute;left:44%;right:44%;top:60%;height:5%;border-radius:0 0 40px 40px;background:#8a5a4a}
-    .screen .ask{font-family:"Young Serif",Georgia,serif;font-size:clamp(.95rem,1.5vw,1.25rem);text-align:center;max-width:22ch;line-height:1.3}
-    .screen .stop{position:absolute;right:16px;bottom:14px;background:#c9463a;color:#fff;font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:4px}
-        .stand{height:12px;background:linear-gradient(#0e1c1e,#233c3f);width:38%;margin:0 auto;border-radius:0 0 6px 6px}
+    .call{background:var(--deep);color:#e7ecea;border-radius:14px;padding:34px 28px 30px;text-align:center;max-width:340px;margin:0 auto;box-shadow:0 30px 60px -30px rgba(21,40,43,.5)}
+    .call-top{font-size:.85rem;color:#8fa7a3;margin-bottom:22px}
+    .call-name{font-family:"Young Serif",Georgia,serif;font-size:2.4rem;line-height:1}
+    .call-name::after{content:".";color:var(--amber)}
+    .call-sub{color:#a7bcb8;font-size:.95rem;margin:12px 0 30px}
+    .call-ring{display:flex;justify-content:center;gap:8px;margin-bottom:30px}
+    .call-ring span{width:8px;height:8px;border-radius:50%;background:var(--amber);opacity:.35}
+    @media (prefers-reduced-motion:no-preference){
+      .call-ring span{animation:pulse 1.6s ease-in-out infinite}
+      .call-ring span:nth-child(2){animation-delay:.25s}.call-ring span:nth-child(3){animation-delay:.5s}
+      @keyframes pulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:1;transform:scale(1.25)}}
+    }
+    .call-btn{display:inline-block;background:#3a9a5b;color:#fff;font-weight:700;padding:14px 40px;border-radius:999px;font-size:1rem}
     .tablet-copy p{color:var(--slate)}
 
     /* what comes back */
@@ -319,7 +324,7 @@
           <a class="btn amber" href="#families">Record a parent's story</a>
           <a class="btn" href="#organisations">Commission a collection</a>
         </div>
-        <p class="fine">Private by default. Reviewed by a person. Shared only where the storyteller says so.</p>
+        <p class="fine">Audio by default, video when wanted. Private by default. Reviewed by a person.</p>
       </div>
 
       <div class="transcript" aria-label="Illustrative transcript excerpt">
@@ -341,7 +346,7 @@
       <div class="body">
         <h2>Families rarely lose the dates. They lose the voice.</h2>
         <p class="lede">The version of events only one person could give. The way they told it. The detail nobody thought to write down because everyone assumed there would be time.</p>
-        <p>The call to Told tends to come after something has shifted. An eightieth birthday. A diagnosis. A move into care. A grandchild who will never meet the person as they were. The intention to record Mum or Dad has usually existed for years. What changes is that the window is now visibly closing.</p>
+        <p>The call to Told tends to come after something has shifted. An eightieth birthday. A diagnosis at fifty. A move into care. A grandchild who will never meet the person as they were. The intention to record someone has usually existed for years. What changes is that the window is now visibly closing.</p>
         <p>Told exists to make the next step easy while it is still possible, and to do it properly, so that what comes back is something a family keeps.</p>
       </div>
     </div>
@@ -352,23 +357,23 @@
       <div class="margin">Three ways to record<small>The storyteller never operates anything</small></div>
       <div class="body">
         <h2>Someone else handles the technology. You choose who.</h2>
-        <p class="lede">A person in their eighties should not have to learn software to be listened to. Told is built so that they sit down and talk. Everything else happens around them.</p>
+        <p class="lede">Nobody should have to learn software to be listened to. Told is built so that the storyteller sits down and talks, whatever their age. Everything else happens around them.</p>
 
         <div class="ways">
           <div class="way">
-            <span class="who">Told asks the questions</span>
-            <h3>A patient interviewer that remembers.</h3>
-            <p>A tablet on a stand. A calm face on the screen asks one question, listens, and picks up where the last conversation left off. Ten minutes today and forty tomorrow is fine. It doesn't get tired, doesn't watch the clock, and will happily hear the same story three times.</p>
+            <span class="who">Told calls them</span>
+            <h3>A phone call at the same time each week.</h3>
+            <p>Told rings at the agreed time. A patient interviewer asks one question, listens, and picks up where last week left off. Ten minutes today and forty next Tuesday is fine. It doesn't get tired, doesn't watch the clock, and will happily hear the same story three times. Nothing to charge, install or learn.</p>
           </div>
           <div class="way">
             <span class="who">You ask, Told helps</span>
             <h3>Thirty minutes every Sunday.</h3>
-            <p>A son, daughter or grandchild leads the conversation on their own phone. Told suggests the next question, notices the thread worth following, and organises what was recorded. Different family members can record different parts of a life over a few months.</p>
+            <p>A son, daughter or grandchild leads the conversation, in the room or over the phone, and records on their own device. Told suggests the next question, notices the thread worth following, and organises what was recorded. Different family members can record different parts of a life over a few months.</p>
           </div>
           <div class="way">
             <span class="who">We send an interviewer</span>
             <h3>For the conversations that matter most.</h3>
-            <p>A trained interviewer visits. Told handles the preparation, the transcription and the follow-up questions for next time. Some material needs a person in the room who knows when to stop talking. Software is not a substitute for that.</p>
+            <p>A trained interviewer visits, with proper audio and, if the family wants it, video. Told handles the preparation, the transcription and the follow-up questions for next time. Some material needs a person in the room who knows when to stop talking. Software is not a substitute for that.</p>
           </div>
         </div>
       </div>
@@ -377,23 +382,22 @@
 
   <section>
     <div class="wrap row">
-      <div class="margin">What the storyteller sees<small>One question. A face. A stop button.</small></div>
+      <div class="margin">What the storyteller does<small>Answers the phone. Talks. Hangs up.</small></div>
       <div class="body">
-        <h2>Almost no interface at all.</h2>
+        <h2>People have been talking on the phone for a hundred years.</h2>
         <div class="tablet-wrap">
           <div>
-            <div class="tablet" role="img" aria-label="Tablet showing a simple interviewer face, one question and a stop button">
-              <div class="screen">
-                <div class="face"><i></i></div>
-                <div class="ask">Tell me about the house where you grew up.</div>
-                                <div class="stop">Stop</div>
-              </div>
+            <div class="call" role="img" aria-label="An incoming phone call from Told, scheduled for Tuesday at ten">
+              <div class="call-top">Incoming call</div>
+              <div class="call-name">Told</div>
+              <div class="call-sub">Tuesday, 10:00 am. Same as last week.</div>
+              <div class="call-ring"><span></span><span></span><span></span></div>
+              <div class="call-btn">Answer</div>
             </div>
-            <div class="stand"></div>
           </div>
           <div class="tablet-copy">
-            <p>No account. No password. No menu. Family or staff set the device up. The storyteller sees a face, hears a question and talks.</p>
-            <p>The camera is there so Told knows whether someone is sitting in front of it. If they leave or fall asleep, it waits quietly. If they come back, it asks whether they'd like to continue. It does not identify anyone and it is not a monitoring device.</p>
+            <p>No device to set up, no screen, no account. The phone rings at the agreed time, on a landline or a mobile, and someone asks about the house in Carlton. It can be done in bed, in hospital, or with eyes closed. When they've had enough, they say so and hang up. Told calls back next week.</p>
+            <p>Audio is the default because the voice is what families say they miss. Nobody cancels a phone call because of their hair. For families who want their parent on film, video is available with a visiting interviewer.</p>
             <p>If a story was lived in Vietnamese, Greek, Italian or Mandarin, it can be told in that language. The family receives the original recording alongside a translation that a person has checked.</p>
           </div>
         </div>
@@ -405,13 +409,13 @@
     <div class="wrap row">
       <div class="margin">What comes back<small>A record, not a hard drive of files</small></div>
       <div class="body">
-        <h2>Their voice, their face, their photographs, and a map of the life.</h2>
+        <h2>Their voice, their photographs, and a map of the life.</h2>
         <div class="back">
           <ul>
-            <li><b>The recordings, untouched</b>Video and audio stay the authoritative source. Nothing generated ever replaces what was actually said.</li>
+            <li><b>The recordings, untouched</b>Every call and session is kept in full as the authoritative source, audio and any video. Nothing generated ever replaces what was actually said.</li>
             <li><b>A transcript a person has read</b>Software transcribes. A human checks names, places and meaning before anything is treated as final. Uncle Bill stays Uncle Bill.</li>
             <li><b>Chapters by place and period</b>Carlton, 1942 to 1953. Preston. The years at the hospital. Easy to find, easy to share one part of.</li>
-            <li><b>Photographs where they belong</b>Held up to the camera or scanned later by family, then placed against the stories they illustrate.</li>
+            <li><b>Photographs where they belong</b>Scanned or uploaded by family from their side, then placed against the stories they illustrate. The storyteller never has to handle them.</li>
             <li><b>A Life Map</b>The people, places, years and unfinished threads, kept as structured record so the next conversation knows where to go.</li>
           </ul>
           <div class="lifemap" aria-label="Illustrative Life Map">
@@ -437,7 +441,7 @@
         <p class="lede">An organisation funds the program. Its people tell their stories. Their families receive the record. With permission, selected stories become a collection that belongs to the community that made it.</p>
 
         <div class="cases">
-          <div class="case"><h3>Retirement living</h3><p>Independent-living communities commission a defined group of residents. Told brings the interviewer or the stations. Residents bring a few photographs and sit down. The village gets a community project people talk about. Families get something they keep.</p></div>
+          <div class="case"><h3>Retirement living</h3><p>Independent-living communities commission a defined group of residents. Told calls residents each week, or sends an interviewer for a recording day. Residents don't need to do anything but talk. The village gets a community project people talk about. Families get something they keep.</p></div>
           <div class="case"><h3>Cultural and migrant associations</h3><p>A collection built around one experience: arriving from Vietnam in 1978, Greek Melbourne, post-war Italian families in the north. Interviews in the first language, with reviewed translation. Questions written with the community, not for it.</p></div>
           <div class="case"><h3>Clubs and societies</h3><p>The players, coaches, volunteers and committee members who carry a club's history in their heads. Told records them and connects the accounts. Three people will remember 1973 differently. That's the point.</p></div>
           <div class="case"><h3>Companies and institutions</h3><p>Founders, long-serving staff and the moments that shaped the place, recorded before that knowledge retires.</p></div>
@@ -473,7 +477,7 @@
         <h2>The technology does the work around the conversation, not instead of it.</h2>
         <div class="steps">
           <div class="step"><div><h3>Choose the people</h3><p>One parent. Twenty residents. A club's oldest members. A community with a shared story.</p></div></div>
-          <div class="step"><div><h3>Record over time</h3><p>Told asks, family asks, or an interviewer visits. Short conversations over weeks work better than one long afternoon.</p></div></div>
+          <div class="step"><div><h3>Record over time</h3><p>Told calls, family asks, or an interviewer visits. Short conversations over weeks work better than one long afternoon.</p></div></div>
           <div class="step"><div><h3>Build the Life Map</h3><p>Names, places, years, photographs and the threads nobody has followed yet, while the original recording stays untouched.</p></div></div>
           <div class="step"><div><h3>A person reviews it</h3><p>Transcription, names and meaning are checked by a human before anything becomes the finished record.</p></div></div>
           <div class="step"><div><h3>Share on their terms</h3><p>Family, community or public, decided per story.</p></div></div>
@@ -488,10 +492,11 @@
       <div class="body">
         <h2>Before you ask us.</h2>
         <div class="faq">
-          <details><summary>Does the person being recorded need to use any technology?</summary><p>No. The storyteller sits down and talks. Family, staff or a Told interviewer handle setup, identity and permissions. Where Told's own interviewer is used, the storyteller sees a face on a tablet, hears one question at a time and can stop whenever they like.</p></details>
+          <details><summary>Does the person being recorded need to use any technology?</summary><p>No. In the simplest version, Told rings them at an agreed time on their ordinary phone. They answer, talk, and hang up when they've had enough. Family or staff handle setup, identity and permissions. Nobody is asked to install, charge or log in to anything.</p></details>
+          <details><summary>Is it audio or video?</summary><p>Audio by default. Most families tell us the voice is what they were afraid of losing, and most storytellers are more relaxed without a camera. Video is available with a visiting interviewer for families and organisations that want it.</p></details>
           <details><summary>Can stories be recorded in a language other than English?</summary><p>Yes. If a story was lived in Vietnamese, Greek, Italian, Mandarin or another language it can be told in that language. The family receives the original recording and a translation that a person has checked.</p></details>
           <details><summary>Who can see the recordings?</summary><p>Every story starts private. The storyteller decides, chapter by chapter, whether it stays with them, is shared with named family, is visible to the community that commissioned a collection, or is made public. Public use requires explicit written consent.</p></details>
-          <details><summary>Does AI write the life story?</summary><p>No. The original video and audio remain the authoritative record. Software transcribes, organises and suggests follow-up questions. A person reviews names, places and meaning before anything is treated as final.</p></details>
+          <details><summary>Does AI write the life story?</summary><p>No. The original recordings remain the authoritative record. Software transcribes, organises and suggests follow-up questions. A person reviews names, places and meaning before anything is treated as final.</p></details>
           <details><summary>How long does it take?</summary><p>It depends on the person. Short conversations over several weeks work better than one long afternoon. Ten minutes today and forty tomorrow is fine. A typical life runs to several hours of recording gathered over a couple of months.</p></details>
           <details><summary>Do you work in residential aged care?</summary><p>Residential aged care is a different setting from retirement living. Where a resident may not have full capacity to consent, Told works to a specific process agreed with the provider rather than a generic form. Talk to us first.</p></details>
           <details><summary>What does it cost?</summary><p>Told quotes a plan and a price before anyone is asked a question. Cost depends on which of the three ways of recording you choose and, for organisations, how many people are in the collection. Email <a href="mailto:hello@told.media">hello@told.media</a>.</p></details>

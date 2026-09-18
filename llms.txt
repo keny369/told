@@ -7,8 +7,9 @@ Told is a life-story recording and preservation service. Its typical customer is
 ## What Told does
 
 - Records a person's life across short conversations rather than one long interview.
-- Offers three ways to record: Told's own conversational interviewer on a tablet, a family member recording with Told's guidance, or a trained interviewer who visits.
-- The storyteller never has to operate technology.
+- Audio by default, video available with a visiting interviewer.
+- Offers three ways to record: Told rings the storyteller on their ordinary phone at a scheduled time each week, a family member records with Told's guidance, or a trained interviewer visits.
+- The storyteller never has to operate technology. In the phone version they answer, talk and hang up.
 - Supports first-language recording (for example Vietnamese, Greek, Italian, Mandarin) with a human-checked translation.
 - Delivers the original recordings, a human-reviewed transcript, chapters by place and period, photographs placed against stories, and a structured Life Map of people, places, years and unfinished threads.
 - Every story is private by default. Sharing is set per story: only me, my family, my community, or public with written consent.
