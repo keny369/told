@@ -1,538 +1,458 @@
 <!doctype html>
+<!--
+  Told: product page for the parents story package.
+  Notes for Lee (not shown on the page):
+  - The guarantee reads "your money back" on the page. The $10 sits only in the terms line in the footer.
+  - Price ($249), the guarantee wording and "ten families" are hypotheses for the payment test and need
+    legal review against the Australian Consumer Law. Edit the number of families to whatever is true.
+  - Extra-copy prices are not stated until an Australian print quote exists.
+  - CTA is a mailto for the pilot. Swap for a form when there is one.
+  - No external assets. Australian spelling. Drop this file anywhere.
+-->
 <html lang="en-AU">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Told records one person's life in their own voice, over as many conversations as it takes, and keeps it for the people who will wish they had asked.">
-  <title>Told | Record a parent's life story in their own voice</title>
-  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
-  <link rel="canonical" href="https://told.media/">
-  <meta name="author" content="Told">
-  <meta name="geo.region" content="AU-VIC">
-  <meta name="geo.placename" content="Melbourne">
-  <meta name="theme-color" content="#1c3336">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231c3336'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' fill='%23eceeeb' text-anchor='middle'%3ET%3C/text%3E%3Ccircle cx='48' cy='44' r='4' fill='%23b9781f'/%3E%3C/svg%3E">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Told">
-  <meta property="og:locale" content="en_AU">
-  <meta property="og:url" content="https://told.media/">
-  <meta property="og:title" content="Told. Ask while you still can.">
-  <meta property="og:description" content="Told records one person's life in their own voice, over as many conversations as it takes, and keeps it for the people who will wish they had asked. Melbourne, Australia.">
-  <meta property="og:image" content="https://told.media/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Told. Ask while you still can.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Told. Ask while you still can.">
-  <meta name="twitter:description" content="Record a parent's life story in their own voice, or commission a collection for a retirement village, club or community organisation.">
-  <meta name="twitter:image" content="https://told.media/og.png">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://told.media/#organization",
-        "name": "Told",
-        "url": "https://told.media/",
-        "email": "hello@told.media",
-        "description": "Told records one person's life in their own voice and preserves it for their family. It also produces community story collections for retirement villages, clubs and cultural organisations.",
-        "address": {"@type": "PostalAddress", "addressLocality": "Melbourne", "addressRegion": "VIC", "addressCountry": "AU"},
-        "areaServed": {"@type": "Country", "name": "Australia"},
-        "knowsLanguage": ["en", "vi", "el", "it", "zh"]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://told.media/#website",
-        "url": "https://told.media/",
-        "name": "Told",
-        "publisher": {"@id": "https://told.media/#organization"},
-        "inLanguage": "en-AU"
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://told.media/#webpage",
-        "url": "https://told.media/",
-        "name": "Told. Ask while you still can.",
-        "isPartOf": {"@id": "https://told.media/#website"},
-        "about": {"@id": "https://told.media/#organization"},
-        "description": "Told records one person's life in their own voice, over as many conversations as it takes, and keeps it for the people who will wish they had asked.",
-        "inLanguage": "en-AU"
-      },
-      {
-        "@type": "Service",
-        "@id": "https://told.media/#life-story",
-        "name": "Life story recording",
-        "serviceType": "Life story and oral history recording",
-        "provider": {"@id": "https://told.media/#organization"},
-        "areaServed": {"@type": "Country", "name": "Australia"},
-        "audience": {"@type": "PeopleAudience", "audienceType": "Adult children recording a parent or grandparent"},
-        "description": "A parent or grandparent's life recorded in their own voice across short conversations, with human-reviewed transcript, chapters, photographs and a structured Life Map. Audio by default, video available. Recorded by Told's conversational interviewer over a scheduled phone call, by a family member with Told's guidance, or by a trained interviewer who visits.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Ways to record",
-          "itemListElement": [
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Told calls them", "description": "A scheduled weekly phone call from a patient conversational interviewer that remembers previous conversations. No device or app required."}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "You ask, Told helps", "description": "A family member records on their own device, in person or by phone, with suggested questions and organisation."}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "We send an interviewer", "description": "A trained interviewer visits with proper audio and optional video, with Told handling preparation, transcription and follow-up."}}
-          ]
-        }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://told.media/#collections",
-        "name": "Community story collections",
-        "serviceType": "Commissioned oral history collection",
-        "provider": {"@id": "https://told.media/#organization"},
-        "areaServed": {"@type": "Country", "name": "Australia"},
-        "audience": {"@type": "BusinessAudience", "audienceType": "Retirement living operators, cultural and migrant associations, clubs, companies and institutions"},
-        "description": "An organisation funds a program in which a defined group of its people record their life stories. Families receive the record. With consent, selected stories form a collection belonging to the community."
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://told.media/#faq",
-        "mainEntity": [
-          {"@type": "Question", "name": "Does the person being recorded need to use any technology?", "acceptedAnswer": {"@type": "Answer", "text": "No. In the simplest version, Told rings them at an agreed time on their ordinary phone. They answer, talk, and hang up when they have had enough. Family or staff handle setup, identity and permissions. Nobody is asked to install, charge or log in to anything."}},
-          {"@type": "Question", "name": "Is it audio or video?", "acceptedAnswer": {"@type": "Answer", "text": "Audio by default. Most families say the voice is what they were afraid of losing, and most storytellers are more relaxed without a camera. Video is available with a visiting interviewer for families and organisations that want it."}},
-          {"@type": "Question", "name": "Can stories be recorded in a language other than English?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. If a story was lived in Vietnamese, Greek, Italian, Mandarin or another language it can be told in that language. The family receives the original recording and a translation that a person has checked."}},
-          {"@type": "Question", "name": "Who can see the recordings?", "acceptedAnswer": {"@type": "Answer", "text": "Every story starts private. The storyteller decides, chapter by chapter, whether it stays with them, is shared with named family, is visible to the community that commissioned a collection, or is made public. Public use requires explicit written consent."}},
-          {"@type": "Question", "name": "Does AI write the life story?", "acceptedAnswer": {"@type": "Answer", "text": "No. The original recordings remain the authoritative record. Software transcribes, organises and suggests follow-up questions. A person reviews names, places and meaning before anything is treated as final."}},
-          {"@type": "Question", "name": "How long does it take?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the person. Short conversations over several weeks work better than one long afternoon. Ten minutes today and forty tomorrow is fine. A typical life runs to several hours of recording gathered over a couple of months."}},
-          {"@type": "Question", "name": "Do you work in residential aged care?", "acceptedAnswer": {"@type": "Answer", "text": "Residential aged care is a different setting from retirement living. Where a resident may not have full capacity to consent, Told works to a specific process agreed with the provider rather than a generic form. Talk to us first."}},
-          {"@type": "Question", "name": "What does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "Told quotes a plan and a price before anyone is asked a question. Cost depends on which of the three ways of recording you choose and, for organisations, how many people are in the collection. Email hello@told.media."}}
-        ]
-      }
-    ]
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Five conversations on his phone. A story you can read and hear, every line in his voice. A hardback on the shelf. If it doesn't sound like him, your money back.">
+<title>Told | His story, in his own words, finished in six weeks</title>
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<link rel="canonical" href="https://told.media/">
+<meta name="author" content="Told">
+<meta name="geo.region" content="AU-VIC">
+<meta name="geo.placename" content="Melbourne">
+<meta name="theme-color" content="#1c3336">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231c3336'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' fill='%23eceeeb' text-anchor='middle'%3ET%3C/text%3E%3Ccircle cx='48' cy='44' r='4' fill='%23b9781f'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Told">
+<meta property="og:locale" content="en_AU">
+<meta property="og:url" content="https://told.media/">
+<meta property="og:title" content="Told. His story, in his own words.">
+<meta property="og:description" content="Five conversations on his phone. A story you can read and hear. A hardback on the shelf. If it doesn't sound like him, your money back. Melbourne, Australia.">
+<meta property="og:image" content="https://told.media/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Told. Ask while you still can.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Told. His story, in his own words.">
+<meta name="twitter:description" content="Five conversations on his phone. A story you can read and hear. A hardback on the shelf. If it doesn't sound like him, your money back.">
+<meta name="twitter:image" content="https://told.media/og.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://told.media/#organization",
+      "name": "Told",
+      "url": "https://told.media/",
+      "email": "hello@told.media",
+      "description": "Told records a parent's story in their own voice over five guided conversations on their phone, and delivers a story the family can read and hear, the full archive, and a hardback book.",
+      "address": {"@type": "PostalAddress", "addressLocality": "Melbourne", "addressRegion": "VIC", "addressCountry": "AU"},
+      "areaServed": {"@type": "Country", "name": "Australia"}
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://told.media/#website",
+      "url": "https://told.media/",
+      "name": "Told",
+      "publisher": {"@id": "https://told.media/#organization"},
+      "inLanguage": "en-AU"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://told.media/#webpage",
+      "url": "https://told.media/",
+      "name": "Told. His story, in his own words, finished in six weeks.",
+      "isPartOf": {"@id": "https://told.media/#website"},
+      "about": {"@id": "https://told.media/#organization"},
+      "description": "Five conversations on his phone. A story you can read and hear, every line in his voice. A hardback on the shelf. If it doesn't sound like him, your money back.",
+      "inLanguage": "en-AU"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://told.media/#parents-story",
+      "name": "The Parents Story",
+      "brand": {"@id": "https://told.media/#organization"},
+      "description": "Five guided conversations on the storyteller's phone, a story page for the family with every line playable in his voice, the full archive, one hardback delivered, and the print-ready file.",
+      "offers": {"@type": "Offer", "price": "249", "priceCurrency": "AUD", "availability": "https://schema.org/PreOrder", "url": "https://told.media/#offer"}
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --ink: #15282b;
+    --ink-soft: #35494c;
+    --muted: #5d6f71;
+    --paper: #eceeeb;
+    --paper-deep: #e0e4df;
+    --card: #ffffff;
+    --line: #cfd6d2;
+    --accent: #8a5812;
+    --accent-deep: #6f4610;
+    --accent-tint: #f1e6cf;
+    --on-accent: #ffffff;
+    --deep: #1c3336;
   }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Young+Serif&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --paper:#eceeeb;
-      --paper-2:#e2e7e4;
-      --ink:#15282b;
-      --slate:#4a5f62;
-      --line:#c5cecb;
-      --amber:#b9781f;
-      --amber-ink:#8a5812;
-      --amber-wash:#f2e6cf;
-      --deep:#1c3336;
-      --deep-2:#264547;
-      --measure:38rem;
-      --gutter:clamp(20px,5vw,72px);
-      --col:minmax(0,1fr);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-    body{
-      margin:0;background:var(--paper);color:var(--ink);
-      font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-      font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;
-    }
-    a{color:inherit}
-    a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
-    h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;margin:0;letter-spacing:-.01em}
-    h1{font-size:clamp(2.6rem,6.2vw,5rem);line-height:1.02}
-    h2{font-size:clamp(1.9rem,3.4vw,2.9rem);line-height:1.12}
-    h3{font-size:1.35rem;line-height:1.25}
-    p{margin:0 0 1em;max-width:var(--measure)}
-    p:last-child{margin-bottom:0}
-    .wrap{padding-left:var(--gutter);padding-right:var(--gutter);max-width:1200px;margin:0 auto}
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .serif { font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; font-weight: 600; line-height: 1.12; margin: 0; letter-spacing: -0.01em; }
+  h1 { font-size: 56px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 22px; }
+  p { margin: 16px 0 0; }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  .narrow { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  .eyebrow { font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  .muted { color: var(--muted); }
+  .btn {
+    display: inline-block; background: var(--accent); color: var(--on-accent);
+    padding: 16px 26px; border-radius: 12px; font-size: 18px; font-weight: 600;
+    text-decoration: none; box-shadow: 0 6px 18px rgba(28, 51, 54, 0.22);
+  }
+  .btn:hover { background: var(--accent-deep); }
+  .btn-note { display: block; font-size: 14px; color: var(--muted); margin-top: 12px; }
 
-    /* nav */
-    .nav{position:sticky;top:0;z-index:20;background:rgba(236,238,235,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-    .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:20px}
-    .mark{font-family:"Young Serif",Georgia,serif;font-size:1.5rem;text-decoration:none;letter-spacing:-.01em}
-    .mark span{color:var(--amber)}
-    .links{display:flex;gap:26px;align-items:center;font-size:.95rem}
-    .links a{text-decoration:none;color:var(--slate)}
-    .links a:hover{color:var(--ink)}
-    .btn{display:inline-block;padding:.75rem 1.25rem;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:700;font-size:.95rem;background:transparent;border-radius:3px}
-    .btn.fill{background:var(--ink);color:var(--paper)}
-    .btn.amber{background:var(--amber);border-color:var(--amber);color:#fff}
-    .btn:hover{opacity:.9}
+  /* Top bar */
+  .top { display: flex; align-items: center; justify-content: space-between; padding: 26px 0; }
+  .wordmark { font-family: Georgia, serif; font-size: 26px; letter-spacing: 0.06em; text-decoration: none; color: var(--ink); }
+  .top nav a { font-size: 15px; color: var(--ink-soft); text-decoration: none; margin-left: 22px; }
 
-    /* hero */
-    .hero{padding:clamp(56px,9vw,120px) 0 clamp(40px,6vw,80px)}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:start}
-    .hero p.lede{font-size:clamp(1.15rem,1.6vw,1.35rem);line-height:1.5;color:var(--slate);margin:1.4rem 0 1.8rem;max-width:32rem}
-    .actions{display:flex;flex-wrap:wrap;gap:12px}
-    .fine{font-size:.9rem;color:var(--slate);margin-top:1.2rem}
+  /* Hero */
+  .hero { background: var(--paper-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .hero .wrap { display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center; padding-top: 72px; padding-bottom: 72px; }
+  .hero p.lede { font-size: 22px; line-height: 1.5; color: var(--ink-soft); margin-top: 22px; }
+  .hero .cta { margin-top: 34px; }
+  .hero .proof { display: flex; gap: 28px; margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 15px; color: var(--ink-soft); }
+  .hero .proof b { display: block; font-family: Georgia, serif; font-size: 26px; font-weight: 600; color: var(--ink); line-height: 1.1; }
+  .art { width: 100%; height: auto; display: block; }
 
-    .transcript{background:var(--deep);color:#dfe6e3;padding:28px 28px 24px;border-radius:4px;position:relative;margin-top:.4rem}
-    .transcript .meta{display:flex;justify-content:space-between;gap:12px;font-size:.85rem;color:#9fb4b0;border-bottom:1px solid #2f4d50;padding-bottom:14px;margin-bottom:10px}
-    .transcript .meta b{color:#fff;font-weight:700}
-    .line{display:grid;grid-template-columns:5.6rem 1fr;gap:14px;padding:11px 0;border-bottom:1px solid #26424510;font-size:1.05rem;line-height:1.5}
-    .line time{font-variant-numeric:tabular-nums;color:var(--amber);font-size:.9rem;padding-top:.15rem}
-    .line.q span{color:#a7bcb8}
-    .line.q span::before{content:"Told  ";color:#fff;font-weight:700;letter-spacing:.02em}
-    .line .pause{color:#7d9793;font-style:italic}
-    .line span{font-family:"Young Serif",Georgia,serif;font-weight:400}
-    .line.q span{font-family:"Atkinson Hyperlegible",sans-serif}
-    .transcript .note{margin-top:14px;font-size:.8rem;color:#7d9793}
-    @media (prefers-reduced-motion:no-preference){
-      .line{opacity:0;transform:translateY(6px);animation:rise .6s ease forwards}
-      .line:nth-child(2){animation-delay:.25s}.line:nth-child(3){animation-delay:.9s}.line:nth-child(4){animation-delay:1.4s}.line:nth-child(5){animation-delay:2.6s}.line:nth-child(6){animation-delay:3.4s}
-      @keyframes rise{to{opacity:1;transform:none}}
-    }
+  /* Sections */
+  section { padding: 80px 0 0; }
+  .fears { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 28px; }
+  .fear { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 28px; }
+  .fear h3 { margin-top: 10px; }
+  .fear .k { font-family: Georgia, serif; font-size: 40px; color: var(--accent); line-height: 1; }
+  .fear p { color: var(--ink-soft); }
+  .answer { margin-top: 28px; font-size: 22px; font-family: Georgia, serif; }
 
-    /* margin layout */
-    section{padding:clamp(56px,7vw,100px) 0;border-top:1px solid var(--line)}
-    .row{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:start}
-    .margin{font-size:.9rem;color:var(--amber-ink);font-weight:700;padding-top:.5rem;position:sticky;top:84px}
-    .margin small{display:block;font-weight:400;color:var(--slate);margin-top:.35rem;line-height:1.45}
-    .body h2{margin-bottom:1.2rem;max-width:22ch}
-    .body .lede{font-size:1.2rem;color:var(--slate)}
+  .steps { margin-top: 12px; }
+  .step { display: grid; grid-template-columns: 56px 1fr; gap: 20px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+  .step:last-child { border-bottom: 0; }
+  .step .n { width: 44px; height: 44px; border-radius: 22px; background: var(--accent-tint); color: var(--accent-deep); display: flex; align-items: center; justify-content: center; font-family: Georgia, serif; font-size: 20px; font-weight: 600; }
+  .step p { margin-top: 8px; color: var(--ink-soft); }
 
-    /* three ways */
-    .ways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:2.4rem;border-top:1.5px solid var(--ink)}
-    .way{padding:24px 24px 28px 0;border-right:1px solid var(--line)}
-    .way:last-child{border-right:0}
-    .way + .way{padding-left:24px}
-    .way h3{margin-bottom:.7rem}
-    .way p{font-size:1rem;color:var(--slate)}
-    .way .who{display:inline-block;font-size:.85rem;color:var(--amber-ink);margin-bottom:1.1rem}
+  /* Offer */
+  .offer { background: var(--deep); color: var(--paper); border-radius: 22px; padding: 44px; margin-top: 32px; }
+  .offer .eyebrow { color: #d9b26a; }
+  .offer h2 { color: #ffffff; margin-top: 8px; }
+  .offer .price { font-family: Georgia, serif; font-size: 64px; line-height: 1; margin-top: 18px; }
+  .offer .price small { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; color: #cfc8b8; margin-left: 10px; }
+  .offer ul { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; }
+  .offer li { display: grid; grid-template-columns: 26px 1fr; gap: 10px; color: #ece6d8; font-size: 17px; line-height: 1.5; }
+  .offer li svg { margin-top: 4px; }
+  .offer .btn { background: #ffffff; color: var(--ink); box-shadow: none; margin-top: 30px; }
+  .offer .btn:hover { background: var(--paper-deep); }
+  .offer .btn-note { color: #cfc8b8; }
 
-    /* call card */
-    .tablet-wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;margin-top:1.8rem}
-    .call{background:var(--deep);color:#e7ecea;border-radius:14px;padding:34px 28px 30px;text-align:center;max-width:340px;margin:0 auto;box-shadow:0 30px 60px -30px rgba(21,40,43,.5)}
-    .call-top{font-size:.85rem;color:#8fa7a3;margin-bottom:22px}
-    .call-name{font-family:"Young Serif",Georgia,serif;font-size:2.4rem;line-height:1}
-    .call-name::after{content:".";color:var(--amber)}
-    .call-sub{color:#a7bcb8;font-size:.95rem;margin:12px 0 30px}
-    .call-ring{display:flex;justify-content:center;gap:8px;margin-bottom:30px}
-    .call-ring span{width:8px;height:8px;border-radius:50%;background:var(--amber);opacity:.35}
-    @media (prefers-reduced-motion:no-preference){
-      .call-ring span{animation:pulse 1.6s ease-in-out infinite}
-      .call-ring span:nth-child(2){animation-delay:.25s}.call-ring span:nth-child(3){animation-delay:.5s}
-      @keyframes pulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:1;transform:scale(1.25)}}
-    }
-    .call-btn{display:inline-block;background:#3a9a5b;color:#fff;font-weight:700;padding:14px 40px;border-radius:999px;font-size:1rem}
-    .tablet-copy p{color:var(--slate)}
+  /* Guarantee */
+  .guarantee { display: grid; grid-template-columns: 180px 1fr; gap: 36px; align-items: center; background: var(--card); border: 2px solid var(--accent); border-radius: 22px; padding: 40px; margin-top: 40px; }
+  .seal { width: 180px; height: 180px; }
+  .guarantee h2 { font-size: 32px; }
+  .guarantee p { font-size: 19px; color: var(--ink-soft); }
+  .guarantee .fine { font-size: 14px; color: var(--muted); margin-top: 14px; }
 
-    /* what comes back */
-    .back{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);margin-top:1.8rem;align-items:start}
-    .back ul{margin:0;padding:0;list-style:none}
-    .back > ul > li{padding:14px 0;border-top:1px solid var(--line);color:var(--slate)}
-    .back > ul > li b{color:var(--ink);display:block;margin-bottom:.15rem}
-    .lifemap{background:#fff;border:1px solid var(--line);padding:26px 28px;border-radius:4px;font-size:.95rem}
-    .lifemap .name{font-family:"Young Serif",Georgia,serif;font-size:1.5rem;margin-bottom:2px}
-    .lifemap .sub{color:var(--slate);font-size:.9rem;margin-bottom:18px}
-    .lm{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}
-    .lm h4{margin:0 0 6px;font-size:.8rem;color:var(--amber-ink);font-weight:700;border-bottom:1px solid var(--line);padding-bottom:5px}
-    .lm ul{margin:0;padding:0;list-style:none;color:var(--ink);line-height:1.55}
-    .lm ul li span{color:var(--slate)}
-    .lm ul li span::before{content:", "}
-    .lm .ask ul li{color:var(--slate)}
-    .lm .ask ul li::before{content:"?";display:inline-block;width:1.1em;color:var(--amber)}
+  .who p { font-size: 20px; }
+  .faq .q { padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .faq .q:last-child { border-bottom: 0; }
+  .faq h3 { font-size: 21px; }
+  .faq p { margin-top: 8px; color: var(--ink-soft); }
 
-    /* organisations */
-    .orgs{background:var(--paper-2)}
-    .cases{margin-top:2rem;border-top:1.5px solid var(--ink)}
-    .case{display:grid;grid-template-columns:minmax(160px,240px) 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line)}
-    .case h3{font-size:1.15rem}
-    .case p{color:var(--slate);font-size:1rem}
-    .callout{margin-top:2rem;padding:20px 24px;background:var(--amber-wash);border-left:4px solid var(--amber);border-radius:0 4px 4px 0;max-width:44rem}
-    .callout p{color:var(--ink);font-size:1rem}
+  .final { background: var(--paper-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: 90px; padding: 72px 0; text-align: center; }
+  .final h2 { font-size: 40px; }
+  .final p { font-size: 20px; color: var(--ink-soft); }
 
-    /* consent */
-    .ladder{margin-top:2rem;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-    .rung{padding:18px 18px 20px;border:1px solid var(--line);border-radius:4px;background:#fff}
-    .rung:nth-child(1){background:var(--deep);color:#e7ecea;border-color:var(--deep)}
-    .rung:nth-child(2){background:var(--deep-2);color:#e7ecea;border-color:var(--deep-2)}
-    .rung h3{font-size:1.15rem;margin-bottom:.4rem}
-    .rung p{font-size:.95rem;opacity:.9}
+  footer { padding: 36px 0 64px; font-size: 14px; color: var(--muted); }
+  footer p { margin-top: 10px; }
 
-    /* steps */
-    .steps{margin-top:2rem;counter-reset:s}
-    .step{display:grid;grid-template-columns:3rem 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--line);counter-increment:s}
-    .step::before{content:counter(s);font-family:"Young Serif",Georgia,serif;font-size:1.6rem;color:var(--amber);line-height:1}
-    .step h3{font-size:1.15rem;margin-bottom:.3rem}
-    .step p{color:var(--slate);font-size:1rem}
-
-    /* faq */
-    .faq{margin-top:2rem}
-    .faq details{border-top:1px solid var(--line);padding:4px 0}
-    .faq details:last-child{border-bottom:1px solid var(--line)}
-    .faq summary{cursor:pointer;list-style:none;padding:16px 2.2rem 16px 0;font-weight:700;font-size:1.08rem;position:relative}
-    .faq summary::-webkit-details-marker{display:none}
-    .faq summary::after{content:"+";position:absolute;right:4px;top:12px;font-family:"Young Serif",Georgia,serif;font-size:1.5rem;color:var(--amber);line-height:1}
-    .faq details[open] summary::after{content:"\2013"}
-    .faq details p{color:var(--slate);padding:0 0 18px;font-size:1rem}
-
-    /* contact */
-    .contact{background:var(--deep);color:#e7ecea;border-top:0}
-    .contact h2,.contact .margin{color:#fff}
-    .contact .margin small{color:#a7bcb8}
-    .contact p{color:#c9d5d2}
-    .contact .btn{border-color:#fff;color:#fff}
-    .contact .btn.amber{background:var(--amber);border-color:var(--amber)}
-    .contact .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);margin-top:2rem}
-    .contact .split h3{color:#fff;margin-bottom:.5rem}
-    .contact .split p{font-size:1rem}
-    .contact .split .btn{margin-top:1rem}
-
-    footer{padding:28px 0 40px;font-size:.9rem;color:var(--slate)}
-    footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    footer a{color:var(--slate)}
-
-    @media (max-width:900px){
-      .links a:not(.btn){display:none}
-      .hero-grid,.tablet-wrap,.back,.contact .split{grid-template-columns:1fr}
-      .row{grid-template-columns:1fr;gap:14px}
-      .margin{position:static;padding-top:0}
-      .ways{grid-template-columns:1fr}
-      .way{border-right:0;border-bottom:1px solid var(--line);padding:22px 0}
-      .way + .way{padding-left:0}
-      .way:last-child{border-bottom:0}
-      .ladder{grid-template-columns:1fr 1fr}
-      .case{grid-template-columns:1fr;gap:6px}
-    }
-    @media (max-width:560px){
-      .ladder{grid-template-columns:1fr}
-      .line{grid-template-columns:4.6rem 1fr}
-      .transcript{padding:20px}
-    }
-  </style>
+  @media (max-width: 860px) {
+    h1 { font-size: 42px; }
+    h2 { font-size: 30px; }
+    .hero .wrap { grid-template-columns: 1fr; gap: 28px; padding-top: 48px; padding-bottom: 48px; }
+    .hero .art-wrap { order: -1; max-width: 360px; margin: 0 auto; }
+    .fears { grid-template-columns: 1fr; }
+    .offer { padding: 30px 24px; }
+    .offer ul { grid-template-columns: 1fr; }
+    .offer .price { font-size: 52px; }
+    .guarantee { grid-template-columns: 1fr; text-align: center; padding: 30px 24px; }
+    .seal { margin: 0 auto; }
+    section { padding-top: 60px; }
+    .final h2 { font-size: 32px; }
+    .top nav a { margin-left: 14px; }
+  }
+</style>
 </head>
 <body>
 
-<header class="nav">
-  <div class="wrap">
-    <a class="mark" href="#top">Told<span>.</span></a>
-    <nav class="links" aria-label="Main">
-      <a href="#families">For families</a>
-      <a href="#organisations">For organisations</a>
+<div class="wrap">
+  <header class="top">
+    <a class="wordmark" href="#">TOLD</a>
+    <nav>
       <a href="#how">How it works</a>
-      <a href="#questions">Questions</a>
-      <a class="btn fill" href="#contact">Talk to us</a>
+      <a href="#offer">The offer</a>
+      <a href="#guarantee">Guarantee</a>
     </nav>
+  </header>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">The Parents Story</div>
+      <h1 style="margin-top:14px">His story, in his own words. Finished in six weeks.</h1>
+      <p class="lede">Five conversations on his phone. A story you can read and hear, every line in his voice. A hardback on the shelf. If it doesn't sound like him, your money back.</p>
+      <div class="cta">
+        <a class="btn" href="mailto:hello@told.media?subject=A%20story%20for%20someone%20I%20love">Start with a conversation</a>
+        <span class="btn-note">Tell us who it's for. A person replies, not a form.</span>
+      </div>
+      <div class="proof">
+        <div><b>5</b>conversations, once a week</div>
+        <div><b>15 min</b>of your time per week</div>
+        <div><b>1</b>hardback, delivered</div>
+      </div>
+    </div>
+    <div class="art-wrap">
+      <svg class="art" viewBox="0 0 520 520" role="img" aria-label="A hardback book and a phone with a single button, joined by sound waves">
+        <defs>
+          <clipPath id="screen"><rect x="318" y="152" width="118" height="228" rx="16"/></clipPath>
+        </defs>
+        <circle cx="270" cy="270" r="228" fill="#dfe6e2"/>
+        <!-- shelf -->
+        <rect x="60" y="418" width="400" height="10" rx="3" fill="#b89f80"/>
+        <rect x="60" y="428" width="400" height="6" rx="2" fill="#a08a6d"/>
+        <!-- book shadow -->
+        <ellipse cx="200" cy="420" rx="120" ry="10" fill="#000" opacity="0.10"/>
+        <!-- book pages edge -->
+        <rect x="112" y="136" width="176" height="280" rx="4" fill="#f4eee0"/>
+        <rect x="118" y="142" width="170" height="272" rx="3" fill="#e6dcc7"/>
+        <!-- book cover -->
+        <rect x="96" y="128" width="184" height="284" rx="8" fill="#1c3336"/>
+        <rect x="96" y="128" width="26" height="284" rx="8" fill="#12252a"/>
+        <rect x="122" y="128" width="6" height="284" fill="#0d1c20" opacity="0.7"/>
+        <!-- cover title lines -->
+        <rect x="150" y="176" width="96" height="10" rx="5" fill="#f4eee0" opacity="0.95"/>
+        <rect x="150" y="196" width="64" height="10" rx="5" fill="#f4eee0" opacity="0.8"/>
+        <!-- cover waveform -->
+        <g stroke="#d9b26a" stroke-width="4" stroke-linecap="round" opacity="0.95">
+          <line x1="152" y1="292" x2="152" y2="304"/>
+          <line x1="164" y1="282" x2="164" y2="314"/>
+          <line x1="176" y1="270" x2="176" y2="326"/>
+          <line x1="188" y1="286" x2="188" y2="310"/>
+          <line x1="200" y1="276" x2="200" y2="320"/>
+          <line x1="212" y1="290" x2="212" y2="306"/>
+          <line x1="224" y1="280" x2="224" y2="316"/>
+          <line x1="236" y1="294" x2="236" y2="302"/>
+        </g>
+        <!-- small code on cover -->
+        <g fill="#f4eee0" opacity="0.9">
+          <rect x="150" y="356" width="8" height="8"/><rect x="162" y="356" width="8" height="8"/><rect x="174" y="356" width="8" height="8"/>
+          <rect x="150" y="368" width="8" height="8"/><rect x="174" y="368" width="8" height="8"/>
+          <rect x="150" y="380" width="8" height="8"/><rect x="162" y="380" width="8" height="8"/><rect x="174" y="380" width="8" height="8"/>
+        </g>
+        <!-- sound arcs -->
+        <g fill="none" stroke="#8a5812" stroke-width="4" stroke-linecap="round" opacity="0.55">
+          <path d="M300 236 a40 40 0 0 1 0 60"/>
+          <path d="M290 216 a64 64 0 0 1 0 100"/>
+          <path d="M280 196 a88 88 0 0 1 0 140"/>
+        </g>
+        <!-- phone shadow -->
+        <ellipse cx="377" cy="420" rx="58" ry="8" fill="#000" opacity="0.10"/>
+        <!-- phone -->
+        <rect x="308" y="142" width="138" height="270" rx="26" fill="#15282b"/>
+        <rect x="318" y="152" width="118" height="228" rx="16" fill="#eceeeb"/>
+        <g clip-path="url(#screen)">
+          <rect x="332" y="176" width="90" height="8" rx="4" fill="#cfc4ad"/>
+          <rect x="332" y="192" width="64" height="8" rx="4" fill="#cfc4ad"/>
+          <g stroke="#8a5812" stroke-width="4" stroke-linecap="round">
+            <line x1="340" y1="250" x2="340" y2="262"/>
+            <line x1="352" y1="240" x2="352" y2="272"/>
+            <line x1="364" y1="230" x2="364" y2="282"/>
+            <line x1="376" y1="244" x2="376" y2="268"/>
+            <line x1="388" y1="236" x2="388" y2="276"/>
+            <line x1="400" y1="248" x2="400" y2="264"/>
+            <line x1="412" y1="242" x2="412" y2="270"/>
+          </g>
+        </g>
+        <!-- the one big button -->
+        <circle cx="377" cy="340" r="24" fill="#b9781f"/>
+        <rect x="370" y="326" width="14" height="20" rx="7" fill="#eceeeb"/>
+        <path d="M366 340 a11 11 0 0 0 22 0" fill="none" stroke="#eceeeb" stroke-width="3" stroke-linecap="round"/>
+        <line x1="377" y1="351" x2="377" y2="356" stroke="#eceeeb" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </div>
   </div>
-</header>
+</div>
 
-<main id="top">
+<section class="narrow">
+  <div class="eyebrow">Why it usually doesn't happen</div>
+  <h2 style="margin-top:12px">Two things stop families from ever doing this</h2>
+  <div class="fears">
+    <div class="fear">
+      <div class="k">1</div>
+      <h3>It never gets finished</h3>
+      <p>The memoir kit arrives. The first few questions get answered. By week six it's in a drawer, and everyone means to get back to it. Then the window closes.</p>
+    </div>
+    <div class="fear">
+      <div class="k">2</div>
+      <h3>It doesn't sound like him</h3>
+      <p>The answers go through a machine and come out smooth. The family reads it and thinks: that's lovely, but Dad doesn't talk like that.</p>
+    </div>
+  </div>
+  <p class="answer">Told is built to remove both. It runs the conversations so nobody has to nag him, and it builds the story from his actual words so it can only sound like him.</p>
+</section>
 
-  <div class="hero">
-    <div class="wrap hero-grid">
+<section class="narrow" id="how">
+  <div class="eyebrow">How it works</div>
+  <h2 style="margin-top:12px">Five conversations. Six weeks. Fifteen minutes a week from you.</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="n">1</div>
       <div>
-        <h1>Ask while you still can.</h1>
-        <p class="lede">Told records one person's life in their own voice, over as many conversations as it takes, and keeps it for the people who will wish they had asked.</p>
-        <div class="actions">
-          <a class="btn amber" href="#families">Record a parent's story</a>
-          <a class="btn" href="#organisations">Commission a collection</a>
-        </div>
-        <p class="fine">Audio by default, video when wanted. Private by default. Reviewed by a person.</p>
+        <h3>Set it up in ten minutes</h3>
+        <p>Tell us who the story is about, the names and places he's likely to mention, and who in the family should be able to hear it. We send a code to his phone. Someone sets it up with him once, in person.</p>
       </div>
-
-      <div class="transcript" aria-label="Illustrative transcript excerpt">
-        <div class="meta"><span><b>Margaret W.</b> Conversation 3 of 11</span><span>Carlton, 1948</span></div>
-        <div class="line q"><time>00:04:02</time><span>You said everything changed when your father came home. What changed?</span></div>
-        <div class="line"><time>00:04:12</time><span>Nobody's ever asked me that.</span></div>
-        <div class="line"><time>00:04:19</time><span class="pause">pause, 7 seconds</span></div>
-        <div class="line"><time>00:04:26</time><span>He didn't talk about New Guinea. Not once. But he stopped sleeping, and Mum started keeping the kitchen light on.</span></div>
-        <div class="line q"><time>00:04:51</time><span>What do you remember about that light?</span></div>
-        <div class="line"><time>00:04:58</time><span>I remember thinking the house was awake.</span></div>
-        <div class="note">Illustrative. Real recordings stay private unless the storyteller decides otherwise.</div>
+    </div>
+    <div class="step">
+      <div class="n">2</div>
+      <div>
+        <h3>He talks</h3>
+        <p>The app asks one question at a time, out loud and in big type, with one big button. He answers for as long as he likes. Twenty to thirty minutes, once a week, five times. It knows when a part of the story is complete and when to ask for the scene behind something he just said.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="n">3</div>
+      <div>
+        <h3>You check the names</h3>
+        <p>After each conversation you get a short list of names and places to confirm, each with a few seconds of him saying it. About fifteen minutes. That is your whole job.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="n">4</div>
+      <div>
+        <h3>Read it. Hear it.</h3>
+        <p>The story arrives as chapters, built from his own words with short connecting sentences. Tap any line and hear him say it. If he said "I think it was 1968", that is what the story says. Anything we can't tie to something he actually said is flagged for a person to look at, never smoothed over.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="n">5</div>
+      <div>
+        <h3>The book</h3>
+        <p>When you say the story is him, we print it. A hardback, with a small code beside each quote that plays his voice. Nothing is printed until you've read it and said yes.</p>
       </div>
     </div>
   </div>
+</section>
 
-  <section>
-    <div class="wrap row">
-      <div class="margin">Why people call<small>Usually a son or daughter, usually a bit late</small></div>
-      <div class="body">
-        <h2>Families rarely lose the dates. They lose the voice.</h2>
-        <p class="lede">The version of events only one person could give. The way they told it. The detail nobody thought to write down because everyone assumed there would be time.</p>
-        <p>The call to Told tends to come after something has shifted. An eightieth birthday. A diagnosis at fifty. A move into care. A grandchild who will never meet the person as they were. The intention to record someone has usually existed for years. What changes is that the window is now visibly closing.</p>
-        <p>Told exists to make the next step easy while it is still possible, and to do it properly, so that what comes back is something a family keeps.</p>
-      </div>
+<section class="narrow" id="offer">
+  <div class="eyebrow">The offer</div>
+  <h2 style="margin-top:12px">Everything, for one price. Nothing to subscribe to.</h2>
+  <div class="offer">
+    <div class="eyebrow">The Parents Story</div>
+    <div class="price">$249 <small>one storyteller, once</small></div>
+    <ul>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Five guided conversations on his own phone, run by the app, not by you</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>The story page for the whole family, every line playable in his voice, five years included</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Every recording kept in full, uncompressed, not just the parts that made the book</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>The archive: recordings, transcripts and story in one download that works without us</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>One hardback, delivered to your door</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>The print-ready file, yours, so more copies can be printed anywhere, any time</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>More copies, hardback or paperback, priced when you order</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>The That's Him guarantee, below</span></li>
+    </ul>
+    <a class="btn" href="mailto:hello@told.media?subject=A%20story%20for%20someone%20I%20love">Start with a conversation</a>
+    <span class="btn-note">We're taking ten families for the first edition. There's a window, and nobody knows how long it is.</span>
+  </div>
+
+  <div class="guarantee" id="guarantee">
+    <svg class="seal" viewBox="0 0 180 180" role="img" aria-label="That's Him guarantee seal">
+      <circle cx="90" cy="90" r="86" fill="#f1e6cf"/>
+      <circle cx="90" cy="90" r="72" fill="none" stroke="#8a5812" stroke-width="3"/>
+      <circle cx="90" cy="90" r="64" fill="none" stroke="#8a5812" stroke-width="1.5" stroke-dasharray="3 4"/>
+      <text x="90" y="80" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#6f4610">That's</text>
+      <text x="90" y="108" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#6f4610">Him</text>
+      <text x="90" y="132" text-anchor="middle" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#8a5812">GUARANTEE</text>
+    </svg>
+    <div>
+      <div class="eyebrow">The That's Him guarantee</div>
+      <h2 style="margin-top:10px">If it doesn't sound like him, your money back.</h2>
+      <p>You read the finished story before we print a single page. If it isn't him, tell us, and we refund you. You keep every recording and every transcript, because they're his, not ours.</p>
+      <p class="fine">Full terms at the foot of the page.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="families">
-    <div class="wrap row">
-      <div class="margin">Three ways to record<small>The storyteller never operates anything</small></div>
-      <div class="body">
-        <h2>Someone else handles the technology. You choose who.</h2>
-        <p class="lede">Nobody should have to learn software to be listened to. Told is built so that the storyteller sits down and talks, whatever their age. Everything else happens around them.</p>
+<section class="narrow who">
+  <div class="eyebrow">Who it's for</div>
+  <h2 style="margin-top:12px">Anyone with a window that might close</h2>
+  <p>Told isn't only for the very old. A parent with a diagnosis. A grandmother who tells the same three stories every Christmas that nobody has ever written down. A father who never talks about his own parents unless someone asks properly. Someone who took one trip that changed everything and wants it told right.</p>
+</section>
 
-        <div class="ways">
-          <div class="way">
-            <span class="who">Told calls them</span>
-            <h3>A phone call at the same time each week.</h3>
-            <p>Told rings at the agreed time. A patient interviewer asks one question, listens, and picks up where last week left off. Ten minutes today and forty next Tuesday is fine. It doesn't get tired, doesn't watch the clock, and will happily hear the same story three times. Nothing to charge, install or learn.</p>
-          </div>
-          <div class="way">
-            <span class="who">You ask, Told helps</span>
-            <h3>Thirty minutes every Sunday.</h3>
-            <p>A son, daughter or grandchild leads the conversation, in the room or over the phone, and records on their own device. Told suggests the next question, notices the thread worth following, and organises what was recorded. Different family members can record different parts of a life over a few months.</p>
-          </div>
-          <div class="way">
-            <span class="who">We send an interviewer</span>
-            <h3>For the conversations that matter most.</h3>
-            <p>A trained interviewer visits, with proper audio and, if the family wants it, video. Told handles the preparation, the transcription and the follow-up questions for next time. Some material needs a person in the room who knows when to stop talking. Software is not a substitute for that.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="narrow faq">
+  <div class="eyebrow">Questions</div>
+  <h2 style="margin-top:12px">The things people ask before they say yes</h2>
+  <div class="q">
+    <h3>Does he need to be good with phones?</h3>
+    <p>No. One question, one button, big type. Someone in the family sets it up with him once. After that he opens the app and talks.</p>
+  </div>
+  <div class="q">
+    <h3>What if there's something he doesn't want to talk about?</h3>
+    <p>He says so and the app moves on. It's never asked again. The hard parts come last, once he's used to it, and he can stop any time.</p>
+  </div>
+  <div class="q">
+    <h3>Who can hear it?</h3>
+    <p>He decides, from his phone, and he can change his mind. The family manages the story within what he has allowed, not beyond it. He also chooses what happens to it after he's gone.</p>
+  </div>
+  <div class="q">
+    <h3>Where is it kept?</h3>
+    <p>In Sydney. You can download all of it whenever you like, and the download works without us. The story page is included for five years; after that, a small yearly fee, or simply keep your copy.</p>
+  </div>
+  <div class="q">
+    <h3>Is the story written by a machine?</h3>
+    <p>It's assembled from his words. The connecting sentences are short and plain, and every factual line points to the recording behind it, which you can play. We don't produce polished narratives, because polish is where he stops sounding like himself.</p>
+  </div>
+  <div class="q">
+    <h3>Can I add photos?</h3>
+    <p>Not yet. The first edition is his words and his voice. Photos are coming.</p>
+  </div>
+  <div class="q">
+    <h3>Does it have to be about his whole life?</h3>
+    <p>No. The Parents Story is about his parents: where they came from, the house, what they were like in a room, one story about each, what they said that stuck. Other packages, a whole life, one trip, one lesson, follow once this one is right.</p>
+  </div>
+</section>
 
-  <section>
-    <div class="wrap row">
-      <div class="margin">What the storyteller does<small>Answers the phone. Talks. Hangs up.</small></div>
-      <div class="body">
-        <h2>People have been talking on the phone for a hundred years.</h2>
-        <div class="tablet-wrap">
-          <div>
-            <div class="call" role="img" aria-label="An incoming phone call from Told, scheduled for Tuesday at ten">
-              <div class="call-top">Incoming call</div>
-              <div class="call-name">Told</div>
-              <div class="call-sub">Tuesday, 10:00 am. Same as last week.</div>
-              <div class="call-ring"><span></span><span></span><span></span></div>
-              <div class="call-btn">Answer</div>
-            </div>
-          </div>
-          <div class="tablet-copy">
-            <p>No device to set up, no screen, no account. The phone rings at the agreed time, on a landline or a mobile, and someone asks about the house in Carlton. It can be done in bed, in hospital, or with eyes closed. When they've had enough, they say so and hang up. Told calls back next week.</p>
-            <p>Audio is the default because the voice is what families say they miss. Nobody cancels a phone call because of their hair. For families who want their parent on film, video is available with a visiting interviewer.</p>
-            <p>If a story was lived in Vietnamese, Greek, Italian or Mandarin, it can be told in that language. The family receives the original recording alongside a translation that a person has checked.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap row">
-      <div class="margin">What comes back<small>A record, not a hard drive of files</small></div>
-      <div class="body">
-        <h2>Their voice, their photographs, and a map of the life.</h2>
-        <div class="back">
-          <ul>
-            <li><b>The recordings, untouched</b>Every call and session is kept in full as the authoritative source, audio and any video. Nothing generated ever replaces what was actually said.</li>
-            <li><b>A transcript a person has read</b>Software transcribes. A human checks names, places and meaning before anything is treated as final. Uncle Bill stays Uncle Bill.</li>
-            <li><b>Chapters by place and period</b>Carlton, 1942 to 1953. Preston. The years at the hospital. Easy to find, easy to share one part of.</li>
-            <li><b>Photographs where they belong</b>Scanned or uploaded by family from their side, then placed against the stories they illustrate. The storyteller never has to handle them.</li>
-            <li><b>A Life Map</b>The people, places, years and unfinished threads, kept as structured record so the next conversation knows where to go.</li>
-          </ul>
-          <div class="lifemap" aria-label="Illustrative Life Map">
-            <div class="name">Margaret Wilson</div>
-            <div class="sub">Born 1942. Eleven conversations. Four hours, twenty minutes.</div>
-            <div class="lm">
-              <div><h4>People</h4><ul><li>George <span>father</span></li><li>Alice <span>mother</span></li><li>Joan <span>sister, three years younger</span></li><li>Frank <span>husband, married 1963</span></li></ul></div>
-              <div><h4>Places</h4><ul><li>Carlton <span>1942 to 1953</span></li><li>Preston <span>from 1953</span></li><li>Lakes Entrance <span>holidays</span></li><li>Royal Melbourne <span>nursing, 1961 to 1974</span></li></ul></div>
-              <div><h4>Told so far</h4><ul><li>Childhood home</li><li>Father's return from New Guinea</li><li>Meeting Frank</li><li>First years of nursing</li></ul></div>
-              <div class="ask"><h4>Still to ask</h4><ul><li>Why they nearly didn't marry</li><li>Joan's move to Canada</li><li>The strike in 1969</li><li>What she'd tell her grandchildren</li></ul></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="orgs" id="organisations">
-    <div class="wrap row">
-      <div class="margin">For organisations<small>One program, twenty lives, one invoice</small></div>
-      <div class="body">
-        <h2>Twenty residents. One purchase order.</h2>
-        <p class="lede">An organisation funds the program. Its people tell their stories. Their families receive the record. With permission, selected stories become a collection that belongs to the community that made it.</p>
-
-        <div class="cases">
-          <div class="case"><h3>Retirement living</h3><p>Independent-living communities commission a defined group of residents. Told calls residents each week, or sends an interviewer for a recording day. Residents don't need to do anything but talk. The village gets a community project people talk about. Families get something they keep.</p></div>
-          <div class="case"><h3>Cultural and migrant associations</h3><p>A collection built around one experience: arriving from Vietnam in 1978, Greek Melbourne, post-war Italian families in the north. Interviews in the first language, with reviewed translation. Questions written with the community, not for it.</p></div>
-          <div class="case"><h3>Clubs and societies</h3><p>The players, coaches, volunteers and committee members who carry a club's history in their heads. Told records them and connects the accounts. Three people will remember 1973 differently. That's the point.</p></div>
-          <div class="case"><h3>Companies and institutions</h3><p>Founders, long-serving staff and the moments that shaped the place, recorded before that knowledge retires.</p></div>
-        </div>
-
-        <div class="callout">
-          <p>Residential aged care is a different setting from retirement living. Where a resident may not have full capacity to consent, we work to a specific process agreed with the provider, not a generic form. If that's your setting, talk to us before anything else.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap row">
-      <div class="margin">Who sees what<small>Set per story, not per person</small></div>
-      <div class="body">
-        <h2>Some stories should be public. Some absolutely should not.</h2>
-        <p class="lede">Every story starts private. Publishing is a choice the storyteller makes, chapter by chapter. A childhood in Carlton can be part of a public collection while the chapter about a marriage stays with the children.</p>
-        <div class="ladder">
-          <div class="rung"><h3>Only me</h3><p>The storyteller alone. Nothing leaves.</p></div>
-          <div class="rung"><h3>My family</h3><p>The people they invite by name.</p></div>
-          <div class="rung"><h3>My community</h3><p>Members of the organisation that commissioned the collection.</p></div>
-          <div class="rung"><h3>Public</h3><p>Searchable by anyone, with explicit written consent for that use.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="how">
-    <div class="wrap row">
-      <div class="margin">How it works<small>From "one day" to done</small></div>
-      <div class="body">
-        <h2>The technology does the work around the conversation, not instead of it.</h2>
-        <div class="steps">
-          <div class="step"><div><h3>Choose the people</h3><p>One parent. Twenty residents. A club's oldest members. A community with a shared story.</p></div></div>
-          <div class="step"><div><h3>Record over time</h3><p>Told calls, family asks, or an interviewer visits. Short conversations over weeks work better than one long afternoon.</p></div></div>
-          <div class="step"><div><h3>Build the Life Map</h3><p>Names, places, years, photographs and the threads nobody has followed yet, while the original recording stays untouched.</p></div></div>
-          <div class="step"><div><h3>A person reviews it</h3><p>Transcription, names and meaning are checked by a human before anything becomes the finished record.</p></div></div>
-          <div class="step"><div><h3>Share on their terms</h3><p>Family, community or public, decided per story.</p></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="questions">
-    <div class="wrap row">
-      <div class="margin">Common questions<small>The ones people ask before they call</small></div>
-      <div class="body">
-        <h2>Before you ask us.</h2>
-        <div class="faq">
-          <details><summary>Does the person being recorded need to use any technology?</summary><p>No. In the simplest version, Told rings them at an agreed time on their ordinary phone. They answer, talk, and hang up when they've had enough. Family or staff handle setup, identity and permissions. Nobody is asked to install, charge or log in to anything.</p></details>
-          <details><summary>Is it audio or video?</summary><p>Audio by default. Most families tell us the voice is what they were afraid of losing, and most storytellers are more relaxed without a camera. Video is available with a visiting interviewer for families and organisations that want it.</p></details>
-          <details><summary>Can stories be recorded in a language other than English?</summary><p>Yes. If a story was lived in Vietnamese, Greek, Italian, Mandarin or another language it can be told in that language. The family receives the original recording and a translation that a person has checked.</p></details>
-          <details><summary>Who can see the recordings?</summary><p>Every story starts private. The storyteller decides, chapter by chapter, whether it stays with them, is shared with named family, is visible to the community that commissioned a collection, or is made public. Public use requires explicit written consent.</p></details>
-          <details><summary>Does AI write the life story?</summary><p>No. The original recordings remain the authoritative record. Software transcribes, organises and suggests follow-up questions. A person reviews names, places and meaning before anything is treated as final.</p></details>
-          <details><summary>How long does it take?</summary><p>It depends on the person. Short conversations over several weeks work better than one long afternoon. Ten minutes today and forty tomorrow is fine. A typical life runs to several hours of recording gathered over a couple of months.</p></details>
-          <details><summary>Do you work in residential aged care?</summary><p>Residential aged care is a different setting from retirement living. Where a resident may not have full capacity to consent, Told works to a specific process agreed with the provider rather than a generic form. Talk to us first.</p></details>
-          <details><summary>What does it cost?</summary><p>Told quotes a plan and a price before anyone is asked a question. Cost depends on which of the three ways of recording you choose and, for organisations, how many people are in the collection. Email <a href="mailto:hello@told.media">hello@told.media</a>.</p></details>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="wrap row">
-      <div class="margin">Talk to us<small>Melbourne, Australia</small></div>
-      <div class="body">
-        <h2>Start with one person.</h2>
-        <p class="lede">We'll tell you what it costs and how long it takes before anyone is asked a question.</p>
-        <div class="split">
-          <div>
-            <h3>For a parent or grandparent</h3>
-            <p>Tell us who they are, roughly where they live, and which of the three ways of recording feels right. We'll come back with a plan and a price.</p>
-            <a class="btn amber" href="mailto:hello@told.media?subject=Recording%20a%20parent%27s%20story">Record a parent's story</a>
-          </div>
-          <div>
-            <h3>For an organisation</h3>
-            <p>Tell us about your community and roughly how many people you have in mind. We'll scope a collection with you.</p>
-            <a class="btn" href="mailto:hello@told.media?subject=Commissioning%20a%20collection">Commission a collection</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
+<div class="final">
+  <div class="narrow">
+    <h2>Six weeks from now, you could have his voice on the shelf.</h2>
+    <p>Or the kit could still be in the drawer. Start with a conversation.</p>
+    <p style="margin-top:28px"><a class="btn" href="mailto:hello@told.media?subject=A%20story%20for%20someone%20I%20love">Start with a conversation</a></p>
+  </div>
+</div>
 
 <footer>
-  <div class="wrap">
-    <div>Told. Ask while you still can. Melbourne, Australia.</div>
-    <div><a href="mailto:hello@told.media">hello@told.media</a></div>
+  <div class="narrow">
+    <p><strong>Guarantee terms.</strong> Tell us after reading the finished story and before we print. The refund is the full price less a $10 processing fee. Recordings and transcripts remain yours; access to the hosted story page ends on refund. Nothing here limits your rights under the Australian Consumer Law.</p>
+    <p><strong>Hosting.</strong> The story page is included for five years, with the option to continue. If we ever stopped hosting, you would be told in advance and given your full download.</p>
+    <p>Told is built in Melbourne. <a href="mailto:hello@told.media">hello@told.media</a></p>
   </div>
 </footer>
 

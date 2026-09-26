@@ -1,23 +1,22 @@
 # Told
 
-> Told records one person's life in their own voice, over as many conversations as it takes, and keeps it for the people who will wish they had asked. Based in Melbourne, Australia. Contact hello@told.media.
+> Told records a parent's story in their own voice over five guided conversations on their phone, and delivers a story the family can read and hear, the full archive, and a hardback book. Based in Melbourne, Australia. Contact hello@told.media.
 
-Told is a life-story recording and preservation service. Its typical customer is an adult son or daughter who wants to record a parent or grandparent while they still can. It also produces commissioned story collections for retirement living communities, cultural and migrant associations, clubs and societies, and companies.
+Told is a life-story recording service for families. Its typical customer is an adult son or daughter who wants to record a parent or grandparent while they still can.
 
 ## What Told does
 
-- Records a person's life across short conversations rather than one long interview.
-- Audio by default, video available with a visiting interviewer.
-- Offers three ways to record: Told rings the storyteller on their ordinary phone at a scheduled time each week, a family member records with Told's guidance, or a trained interviewer visits.
-- The storyteller never has to operate technology. In the phone version they answer, talk and hang up.
-- Supports first-language recording (for example Vietnamese, Greek, Italian, Mandarin) with a human-checked translation.
-- Delivers the original recordings, a human-reviewed transcript, chapters by place and period, photographs placed against stories, and a structured Life Map of people, places, years and unfinished threads.
-- Every story is private by default. Sharing is set per story: only me, my family, my community, or public with written consent.
-- Residential aged care is treated as a distinct setting with a specific consent process agreed with the provider.
+- Runs five guided conversations of twenty to thirty minutes, once a week, on the storyteller's own phone. The app asks one question at a time, out loud and in big type, with one big button.
+- The first package is The Parents Story: what the storyteller remembers of their own parents, in twelve parts.
+- Builds the written story from the storyteller's verbatim words with short connecting sentences. Every factual sentence points to the recording that supports it, and the family can play it. Unsupported sentences are flagged for a person, not smoothed over.
+- Keeps every recording in full, uncompressed, plus transcripts, and delivers all of it as a download that works without Told.
+- Delivers one hardback with codes beside each quote that play the storyteller's voice, plus the print-ready file for more copies.
+- The storyteller decides who can hear the story and can change that from their phone. Data is stored in Sydney.
+- Price: AU$249 for one storyteller. Guarantee: read the finished story before printing; if it does not sound like them, money back (terms on the page).
 
 ## Pages
 
-- [Home](https://told.media/): full description of the service, the three ways to record, collections for organisations, consent model and common questions.
+- [Home](https://told.media/): the offer, how it works, the guarantee and common questions.
 
 ## Contact
 
