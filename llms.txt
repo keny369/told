@@ -1,22 +1,24 @@
 # Told
 
-> Told records a parent's story in their own voice over five guided conversations on their phone, and delivers a story the family can read and hear, the full archive, and a hardback book. Based in Melbourne, Australia. Contact hello@told.media.
+> Told records a parent talking about the people who raised them, over five guided conversations on their own phone, and delivers a story the family can read with the recording behind every quote and fact, the lossless archive, and a hardback book. Based in Melbourne, Australia. Contact hello@told.media.
 
 Told is a life-story recording service for families. Its typical customer is an adult son or daughter who wants to record a parent or grandparent while they still can.
 
 ## What Told does
 
-- Runs five guided conversations of twenty to thirty minutes, once a week, on the storyteller's own phone. The app asks one question at a time, out loud and in big type, with one big button.
-- The first package is The Parents Story: what the storyteller remembers of their own parents, in twelve parts.
-- Builds the written story from the storyteller's verbatim words with short connecting sentences. Every factual sentence points to the recording that supports it, and the family can play it. Unsupported sentences are flagged for a person, not smoothed over.
-- Keeps every recording in full, uncompressed, plus transcripts, and delivers all of it as a download that works without Told.
+- Runs five guided conversations of twenty to thirty minutes, about a week apart, on the storyteller's own phone. The app asks one question at a time, out loud and in big type, with one big button, and sets a reminder for the next conversation.
+- The first package is The Parents Story: what the storyteller remembers of their own parents, in twelve parts. It is one story, not a whole life.
+- Builds the written story from the storyteller's verbatim words with short connecting sentences. Every quote and every factual sentence points to the recording it came from, and the family can play it. Connecting sentences do not carry audio. Unsupported sentences are flagged for a person, not smoothed over.
+- Shows the family the first chapter after the first conversation's names review. The family's work is about fifteen minutes a week confirming names and places, and about an hour at the end checking names, dates and relationships against the recordings before printing.
+- Keeps every recording in full and lossless, plus transcripts, and delivers all of it as a download that works without Told.
 - Delivers one hardback with codes beside each quote that play the storyteller's voice, plus the print-ready file for more copies.
-- The storyteller decides who can hear the story and can change that from their phone. Data is stored in Sydney.
-- Price: AU$249 for one storyteller. Guarantee: read the finished story before printing; if it does not sound like them, money back (terms on the page).
+- The storyteller decides who can hear the story, can change that from their phone, and chooses what happens to it after their death. Data is stored in Sydney, Australia.
+- Price: A$249 (Australian dollars) for one storyteller, paid once. No subscription. Guarantee: the family reads the finished story before printing; if it does not sound like them, a full refund, and the recordings and transcripts stay with the family (terms on the page).
+- Comparison figures on the page are indicative, checked September 2026, in each service's own currency: Australian ghostwriters from about A$10,000 and several months to a year; memoir subscription services US$69 to US$199 a year.
 
 ## Pages
 
-- [Home](https://told.media/): the offer, how it works, the guarantee and common questions.
+- [Home](https://told.media/): the offer, how it works, the guarantee and every reason this usually fails.
 
 ## Contact
 
