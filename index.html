@@ -8,12 +8,12 @@
     StoryWorth and Remento list prices). Recheck before any campaign.
   - Price ($249), the guarantee wording and "ten families" are hypotheses for the payment test and need
     legal review. Edit the number of families to whatever is true.
-  - Every claim on the page maps to the build specification 1.6: recordings are lossless (FLAC), quotes and
+  - Every claim on the page maps to the build specification 1.10: recordings are lossless (FLAC), quotes and
     factual sentences play their source audio, connecting sentences do not, chapter one appears after the
     first conversation's names review, and a record can be closed early.
-  - Extra-copy prices are not stated until an Australian print quote exists.
+  - Extra-copy prices are not stated until a print quote exists.
   - CTA is a mailto for the pilot. Swap for a form when there is one.
-  - No external assets. US spelling. Drop this file anywhere.
+  - Assets: hero-book.jpg and hero-book.webp (the hero), og.jpg (social preview). US spelling. Location-agnostic: no city, no country, no data-residency claim on the page.
 -->
 <html lang="en-US">
 <head>
@@ -32,14 +32,14 @@
 <meta property="og:url" content="https://told.media/">
 <meta property="og:title" content="Told. Your parent's story, told in their own voice.">
 <meta property="og:description" content="Six conversations on their phone, in chapters they name themselves. A story you can read, with the recording behind every quote. A hardcover on the shelf. If it doesn't sound like them, your money back.">
-<meta property="og:image" content="https://told.media/og.png">
+<meta property="og:image" content="https://told.media/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Told. Ask while you still can.">
+<meta property="og:image:alt" content="A finished Told hardcover open beside a phone playing the storyteller's voice">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Told. Your parent's story, told in their own voice.">
 <meta name="twitter:description" content="Six conversations on their phone, in chapters they name themselves. A story you can read, with the recording behind every quote. A hardcover on the shelf. If it doesn't sound like them, your money back.">
-<meta name="twitter:image" content="https://told.media/og.png">
+<meta name="twitter:image" content="https://told.media/og.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -51,7 +51,6 @@
       "url": "https://told.media/",
       "email": "hello@told.media",
       "description": "Told records a parent's life story in chapters they name themselves, over six guided conversations on their phone, and delivers a story the family can read with the recording behind every quote and fact, the lossless archive, and a hardcover book.",
-      "address": {"@type": "PostalAddress", "addressLocality": "Melbourne", "addressRegion": "VIC", "addressCountry": "AU"},
       "areaServed": "Worldwide"
     },
     {
@@ -134,13 +133,13 @@
 
   /* Hero */
   .hero { background: var(--paper-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .hero .wrap { display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center; padding-top: 72px; padding-bottom: 72px; }
+  .hero .wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center; padding-top: 72px; padding-bottom: 72px; }
   .hero p.lede { font-size: 22px; line-height: 1.5; color: var(--ink-soft); margin-top: 22px; }
   .hero p.scope { font-size: 16px; line-height: 1.5; color: var(--muted); margin-top: 14px; }
   .hero .cta { margin-top: 34px; }
   .hero .proof { display: flex; gap: 28px; margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 15px; color: var(--ink-soft); }
   .hero .proof b { display: block; font-family: Georgia, serif; font-size: 26px; font-weight: 600; color: var(--ink); line-height: 1.1; white-space: nowrap; }
-  .art { width: 100%; height: auto; display: block; }
+  .art { width: 100%; height: auto; display: block; border-radius: 14px; box-shadow: 0 18px 40px rgba(28, 51, 54, 0.22); }
 
   /* Sections */
   section { padding-top: 80px; }
@@ -194,7 +193,7 @@
     h1 { font-size: 42px; }
     h2 { font-size: 30px; }
     .hero .wrap { grid-template-columns: 1fr; gap: 28px; padding-top: 48px; padding-bottom: 48px; }
-    .hero .art-wrap { order: -1; max-width: 360px; margin: 0 auto; }
+    .hero .art-wrap { order: -1; max-width: 100%; margin: 0; }
     .hero .proof { gap: 16px; }
     .hero .proof b { font-size: 22px; }
     .fears { grid-template-columns: 1fr; }
@@ -241,73 +240,10 @@
       </div>
     </div>
     <div class="art-wrap">
-      <svg class="art" viewBox="0 0 520 520" role="img" aria-label="A hardcover book and a phone with a single button, joined by sound waves">
-        <defs>
-          <clipPath id="screen"><rect x="318" y="152" width="118" height="228" rx="16"/></clipPath>
-        </defs>
-        <circle cx="270" cy="270" r="228" fill="#dfe6e2"/>
-        <!-- shelf -->
-        <rect x="60" y="418" width="400" height="10" rx="3" fill="#b89f80"/>
-        <rect x="60" y="428" width="400" height="6" rx="2" fill="#a08a6d"/>
-        <!-- book shadow -->
-        <ellipse cx="200" cy="420" rx="120" ry="10" fill="#000" opacity="0.10"/>
-        <!-- book pages edge -->
-        <rect x="112" y="136" width="176" height="280" rx="4" fill="#f4eee0"/>
-        <rect x="118" y="142" width="170" height="272" rx="3" fill="#e6dcc7"/>
-        <!-- book cover -->
-        <rect x="96" y="128" width="184" height="284" rx="8" fill="#1c3336"/>
-        <rect x="96" y="128" width="26" height="284" rx="8" fill="#12252a"/>
-        <rect x="122" y="128" width="6" height="284" fill="#0d1c20" opacity="0.7"/>
-        <!-- cover title lines -->
-        <rect x="150" y="176" width="96" height="10" rx="5" fill="#f4eee0" opacity="0.95"/>
-        <rect x="150" y="196" width="64" height="10" rx="5" fill="#f4eee0" opacity="0.8"/>
-        <!-- cover waveform -->
-        <g stroke="#d9b26a" stroke-width="4" stroke-linecap="round" opacity="0.95">
-          <line x1="152" y1="292" x2="152" y2="304"/>
-          <line x1="164" y1="282" x2="164" y2="314"/>
-          <line x1="176" y1="270" x2="176" y2="326"/>
-          <line x1="188" y1="286" x2="188" y2="310"/>
-          <line x1="200" y1="276" x2="200" y2="320"/>
-          <line x1="212" y1="290" x2="212" y2="306"/>
-          <line x1="224" y1="280" x2="224" y2="316"/>
-          <line x1="236" y1="294" x2="236" y2="302"/>
-        </g>
-        <!-- small code on cover -->
-        <g fill="#f4eee0" opacity="0.9">
-          <rect x="150" y="356" width="8" height="8"/><rect x="162" y="356" width="8" height="8"/><rect x="174" y="356" width="8" height="8"/>
-          <rect x="150" y="368" width="8" height="8"/><rect x="174" y="368" width="8" height="8"/>
-          <rect x="150" y="380" width="8" height="8"/><rect x="162" y="380" width="8" height="8"/><rect x="174" y="380" width="8" height="8"/>
-        </g>
-        <!-- sound arcs -->
-        <g fill="none" stroke="#8a5812" stroke-width="4" stroke-linecap="round" opacity="0.55">
-          <path d="M300 236 a40 40 0 0 1 0 60"/>
-          <path d="M290 216 a64 64 0 0 1 0 100"/>
-          <path d="M280 196 a88 88 0 0 1 0 140"/>
-        </g>
-        <!-- phone shadow -->
-        <ellipse cx="377" cy="420" rx="58" ry="8" fill="#000" opacity="0.10"/>
-        <!-- phone -->
-        <rect x="308" y="142" width="138" height="270" rx="26" fill="#15282b"/>
-        <rect x="318" y="152" width="118" height="228" rx="16" fill="#eceeeb"/>
-        <g clip-path="url(#screen)">
-          <rect x="332" y="176" width="90" height="8" rx="4" fill="#cfc4ad"/>
-          <rect x="332" y="192" width="64" height="8" rx="4" fill="#cfc4ad"/>
-          <g stroke="#8a5812" stroke-width="4" stroke-linecap="round">
-            <line x1="340" y1="250" x2="340" y2="262"/>
-            <line x1="352" y1="240" x2="352" y2="272"/>
-            <line x1="364" y1="230" x2="364" y2="282"/>
-            <line x1="376" y1="244" x2="376" y2="268"/>
-            <line x1="388" y1="236" x2="388" y2="276"/>
-            <line x1="400" y1="248" x2="400" y2="264"/>
-            <line x1="412" y1="242" x2="412" y2="270"/>
-          </g>
-        </g>
-        <!-- the one big button -->
-        <circle cx="377" cy="340" r="24" fill="#b9781f"/>
-        <rect x="370" y="326" width="14" height="20" rx="7" fill="#eceeeb"/>
-        <path d="M366 340 a11 11 0 0 0 22 0" fill="none" stroke="#eceeeb" stroke-width="3" stroke-linecap="round"/>
-        <line x1="377" y1="351" x2="377" y2="356" stroke="#eceeeb" stroke-width="3" stroke-linecap="round"/>
-      </svg>
+      <picture>
+        <source srcset="hero-book.webp" type="image/webp">
+        <img class="art" src="hero-book.jpg" width="1400" height="933" alt="A finished Told hardcover open on a table: a chapter called The Footscray Years, a family photograph, a pulled quote with a small code beside it labelled Hear Bill say it, and a phone showing the same quote with a play button" fetchpriority="high">
+      </picture>
     </div>
   </div>
 </div>
@@ -384,7 +320,7 @@
       <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>The story page for the whole family, with the recording behind every quote and every fact, five years included</span></li>
       <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Every recording kept in full and lossless, not just the parts that made the book</span></li>
       <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>The archive: recordings, transcripts and story in one download that works without us</span></li>
-      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>One hardcover, delivered to your door</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>One hardcover, delivered to your door, with the family's photos printed where they belong</span></li>
       <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>The print-ready file, yours, so more copies can be printed anywhere, any time</span></li>
       <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>More copies, hardcover or paperback, priced when you order</span></li>
       <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d9b26a" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>The That's Them guarantee, below</span></li>
@@ -450,11 +386,11 @@
   </div>
   <div class="q">
     <h3>We lose it</h3>
-    <p>Every recording is kept lossless, in Sydney. You can download all of it at any time, and the download works without us. The story page is included for five years; after that, a small yearly fee, or simply keep your copy.</p>
+    <p>Every recording is kept lossless and backed up, and you can download all of it at any time; the download works without us. The story page is included for five years; after that, a small yearly fee, or simply keep your copy.</p>
   </div>
   <div class="q">
-    <h3>Can I add photos?</h3>
-    <p>Not yet. The first edition is their words and their voice. Photos are coming.</p>
+    <h3>Can we add photos?</h3>
+    <p>Yes. Anyone in the family can add photos on the story page and say which chapter each belongs to, with a caption. They're printed where they belong. Captions are marked as the family's words, so the story stays theirs.</p>
   </div>
   <div class="q">
     <h3>Can six conversations hold a whole life?</h3>
@@ -475,7 +411,7 @@
     <p><strong>Guarantee terms.</strong> Tell us after reading the finished story and before we print, and we refund the full price. Recordings and transcripts remain yours; access to the hosted story page ends on refund. Nothing here limits your rights under the consumer law where you live.</p>
     <p><strong>Prices.</strong> All prices are in US dollars. The comparison figures are indicative, checked in September 2026: professional ghostwriters charge $18,000 to $50,000 for a memoir or nonfiction book (Reedsy's 2026 marketplace data), and the memoir subscription services charge $69 to $199 a year. They will change.</p>
     <p><strong>Hosting.</strong> The story page is included for five years, with the option to continue. If we ever stopped hosting, you would be told in advance and given your full download.</p>
-    <p>Told is built in Melbourne. <a href="mailto:hello@told.media">hello@told.media</a></p>
+    <p>Told. <a href="mailto:hello@told.media">hello@told.media</a></p>
   </div>
 </footer>
 
