@@ -23,6 +23,8 @@
 <title>Told | Their story, in their own voice, before the window closes</title>
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://told.media/">
+<link rel="alternate" type="text/plain" href="https://told.media/llms.txt" title="Plain-text summary for machines">
+<link rel="sitemap" type="application/xml" href="https://told.media/sitemap.xml">
 <meta name="author" content="Told">
 <meta name="theme-color" content="#1c3336">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231c3336'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' fill='%23eceeeb' text-anchor='middle'%3ET%3C/text%3E%3Ccircle cx='48' cy='44' r='4' fill='%23b9781f'/%3E%3C/svg%3E">
@@ -69,6 +71,22 @@
       "isPartOf": {"@id": "https://told.media/#website"},
       "about": {"@id": "https://told.media/#organization"},
       "description": "You won't have to be the one who asks. Told talks with your parent, six conversations on their own phone, and you get their story with their voice behind every word, and a hardcover on the shelf. You read it before we print. If it isn't them, full refund.",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://told.media/privacy.html",
+      "url": "https://told.media/privacy.html",
+      "name": "Told privacy",
+      "isPartOf": {"@id": "https://told.media/#website"},
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://told.media/terms.html",
+      "url": "https://told.media/terms.html",
+      "name": "Told terms",
+      "isPartOf": {"@id": "https://told.media/#website"},
       "inLanguage": "en-US"
     },
     {
@@ -130,6 +148,8 @@
   .top { display: flex; align-items: center; justify-content: space-between; padding-top: 26px; padding-bottom: 26px; }
   .wordmark { font-family: Georgia, serif; font-size: 26px; letter-spacing: 0.06em; text-decoration: none; color: var(--ink); }
   .top nav a { font-size: 15px; color: var(--ink-soft); text-decoration: none; margin-left: 22px; }
+  .top nav a.nav-cta { background: var(--accent); color: var(--on-accent); padding: 9px 14px; border-radius: 999px; font-weight: 600; }
+  @media (max-width: 640px) { .top nav a.nav-cta { display: none; } }
 
   /* Hero */
   .hero { background: var(--paper-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -216,8 +236,9 @@
     <a class="wordmark" href="#">TOLD</a>
     <nav>
       <a href="#how">How it works</a>
-      <a href="#offer">The offer</a>
+      <a href="#offer">Price</a>
       <a href="#guarantee">Guarantee</a>
+      <a class="nav-cta" href="mailto:hello@told.media?subject=A%20story%20for%20someone%20I%20love">Start their story</a>
     </nav>
   </header>
 </div>
@@ -310,8 +331,8 @@
 </section>
 
 <section class="narrow" id="offer">
-  <div class="eyebrow">The offer</div>
-  <h2 style="margin-top:12px">Everything, for one price. Nothing to subscribe to.</h2>
+  <div class="eyebrow">The price</div>
+  <h2 style="margin-top:12px">One price. Everything. Nothing to subscribe to.</h2>
   <div class="offer">
     <div class="eyebrow">The Life Story: six conversations, one book, their voice kept</div>
     <p style="margin-top:22px;color:#ece6d8;font-size:17px;line-height:1.55">The usual alternative is doing nothing, and the cost of that arrives later, all at once. The memoir subscriptions are a year of weekly homework for $69 to $199. A ghostwriter is $18,000 to $50,000 and months. This is $249, once. Six conversations, then it's done.</p>

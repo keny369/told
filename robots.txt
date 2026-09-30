@@ -1,7 +1,16 @@
-# Told, told.media. Everyone is welcome to read this site, including AI crawlers.
+# Told, told.media. Everyone is welcome to read this site: people, search engines and AI crawlers of every kind.
+# Nothing is disallowed. A plain-text summary for machines is at https://told.media/llms.txt
+
 User-agent: *
 Allow: /
 
+# Named so there is no guessing. All allowed.
+User-agent: Googlebot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bingbot
+Allow: /
 User-agent: GPTBot
 Allow: /
 User-agent: OAI-SearchBot
@@ -12,13 +21,17 @@ User-agent: ClaudeBot
 Allow: /
 User-agent: Claude-Web
 Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
 User-agent: anthropic-ai
 Allow: /
 User-agent: PerplexityBot
 Allow: /
 User-agent: Perplexity-User
 Allow: /
-User-agent: Google-Extended
+User-agent: Applebot
 Allow: /
 User-agent: Applebot-Extended
 Allow: /
@@ -30,11 +43,17 @@ User-agent: CCBot
 Allow: /
 User-agent: meta-externalagent
 Allow: /
+User-agent: meta-externalfetcher
+Allow: /
 User-agent: DuckAssistBot
 Allow: /
 User-agent: cohere-ai
 Allow: /
 User-agent: MistralAI-User
+Allow: /
+User-agent: Diffbot
+Allow: /
+User-agent: YouBot
 Allow: /
 
 Sitemap: https://told.media/sitemap.xml
