@@ -19,6 +19,8 @@ Told is a life-story recording service for families. Its typical customer is an 
 ## Pages
 
 - [Home](https://told.media/): the offer, how it works, the guarantee and every reason this usually fails.
+- [Privacy](https://told.media/privacy.html): what Told collects, who else touches it, retention, deletion, the storyteller's control, rights.
+- [Terms](https://told.media/terms.html): what is bought, the That's Them guarantee, consent and control, ownership, hosting and the download, delivery.
 
 ## Contact
 
