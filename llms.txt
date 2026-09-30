@@ -13,8 +13,10 @@ Told is a life-story recording service for families. Its typical customer is an 
 - Keeps every recording in full and lossless, plus transcripts, and delivers all of it as a download that works without Told.
 - Delivers one hardcover with codes beside each quote that play the storyteller's voice, with photos the family adds printed where they belong (captions marked as the family's words), plus the print-ready file for more copies.
 - The storyteller decides who can hear the story, can change that from their phone, and chooses what happens to it after their death. Recordings are kept lossless and backed up, and the family can download everything at any time.
+- A conversation counts toward the six only once it reaches its usual length; if the storyteller stops early, the sitting is kept and short sittings add together.
+- Requirements: the storyteller needs an iPhone on iOS 17 or later (iPhone XR, XS or newer) and an internet connection; Android is planned. Conversations are in English; names and words from other languages are kept as said.
 - Price: $249 (US dollars) for one storyteller, paid once. No subscription. Guarantee: the family reads the finished story before printing; if it does not sound like them, a full refund, and the recordings and transcripts stay with the family (terms on the page).
-- Comparison figures on the page are indicative, checked September 2026, in US dollars: professional ghostwriters charge $18,000 to $50,000 for a memoir or nonfiction book (Reedsy 2026 marketplace data); memoir subscription services charge $69 to $199 a year.
+- Comparison figures on the page are indicative, checked September 2026, in US dollars: professional ghostwriters charge $18,000 to $50,000 for a memoir or nonfiction book (Reedsy 2026 marketplace data); memoir subscription services charge $69 to $199 a year, renewing each year.
 
 ## Pages
 
